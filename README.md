@@ -16,8 +16,8 @@ Este proyecto es un lugar donde podrás explorar la vida y contribuciones de fig
 ## 🎨 Tecnologías Utilizadas
 
 - Frontend [Angular](https://angular.io/) - Framework para construir aplicaciones web.
-- Backend [Node JS]
-- Base de datos [MySQL]
+- Backend [Node.js](https://nodejs.org/en/)
+- Base de datos [MySQL](https://www.mysql.com/)
 - [Tailwind CSS](https://tailwindcss.com/) - Estilos personalizables para una mejor experiencia visual.
 - [DaisyUI](https://daisyui.com/) - Componentes estilizados y modernos.
 
