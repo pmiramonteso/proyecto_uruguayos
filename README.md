@@ -1,27 +1,43 @@
-# ProyectoUruguayos
+# 🎉 Proyecto Uruguayos 🇺🇾
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+Bienvenido a **Proyecto Uruguayos**, una aplicación Angular diseñada para brindar información valiosa sobre uruguayos destacados y su historia.
 
-## Development server
+## 📚 Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este proyecto es un lugar donde podrás explorar la vida y contribuciones de figuras uruguayas importantes, aprender sobre su impacto en la cultura y la sociedad, y disfrutar de una interfaz amigable y responsiva.
 
-## Code scaffolding
+## 🚀 Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🌐 Interfaz intuitiva y fácil de usar.
+- 📱 Optimización para dispositivos móviles.
+- 📊 Gráficos interactivos para visualizar datos relevantes.
+- 🗓️ Sección de calendario con eventos destacados.
 
-## Build
+## 🎨 Tecnologías Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Frontend [Angular](https://angular.io/) - Framework para construir aplicaciones web.
+- Backend [Node JS]
+- Base de datos [MySQL]
+- [Tailwind CSS](https://tailwindcss.com/) - Estilos personalizables para una mejor experiencia visual.
+- [DaisyUI](https://daisyui.com/) - Componentes estilizados y modernos.
 
-## Running unit tests
+## 🔧 Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para clonar el repositorio y configurar el proyecto, sigue estos pasos:
 
-## Running end-to-end tests
+1. Clona el repositorio:
+   git clone https://github.com/tu_usuario/proyecto-uruguayos.git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navega al directorio del proyecto:
+   cd proyecto-uruguayos
 
-## Further help
+3. Instala las dependencias:
+   npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4. Inicia la aplicación:
+  ng serve
+
+## 🌟 Contribuciones
+Si deseas contribuir, no dudes en abrir un issue o enviar un pull request. ¡Toda ayuda es bienvenida!
+
+¡Gracias por visitar mi proyecto! 🙌
