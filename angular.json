@@ -25,12 +25,14 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+           "assets": [
+  {
+    "glob": "**/*",
+    "input": "src/assets",
+    "output": "/assets"
+  }
+]
+,
             "styles": [
               "src/styles.scss"
             ],
@@ -85,11 +87,12 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+  {
+    "glob": "**/*",
+    "input": "src/assets",
+    "output": "/assets"
+  }
+],
             "styles": [
               "src/styles.scss"
             ],
@@ -98,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

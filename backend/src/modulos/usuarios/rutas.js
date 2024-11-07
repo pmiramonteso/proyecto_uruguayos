@@ -36,7 +36,7 @@ async function agregar (req, res, siguiente) {
         if(req.body.id == 0){
             mensaje = 'Usuario guardado';
         } else {
-            mensaje = ' Usuario actualizado';
+            mensaje = ' Usuario guardado';
         }
         respuesta.success(req, res, mensaje, 201);  
     } catch (err){
