@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { BienvenidaComponent } from './bienvenida/bienvenida.component';
-import { HomeComponent } from './home/home.component';
-import { CalendarioComponent } from './calendario/calendario.component';
-import { GraficosComponent } from './graficos/graficos.component';
-import { MapaComponent } from './mapa/mapa.component';
+import { BienvenidaComponent } from './componentes/bienvenida/bienvenida.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { CalendarioComponent } from './componentes/calendario/calendario.component';
+import { GraficosComponent } from './componentes/graficos/graficos.component';
+import { MapaComponent } from './componentes/mapa/mapa.component';
 
 
 export const routes: Routes = [

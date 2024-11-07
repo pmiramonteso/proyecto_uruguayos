@@ -1,5 +1,5 @@
-function error(mensaje, codigo) {
-let e = new Error(mensaje);
+function error(message, codigo) {
+let e = new Error(message);
 
 if(codigo) {
     e.statusCodigo = codigo;
