@@ -1,11 +1,14 @@
 const auth = require("../../auth");
 
 module.exports = function chequearAuth () {
-
-    function middleware(req, res, siguiente) {
-        const id = req.body.id;
-        auth.chequearToken.confirmarToken(req, id)
-        siguiente();
+    return function (req, res, siguiente) {
+        try {
+            const id = req.body.id;
+            auth.chequearToken.confirmarToken(req, id)
+            siguiente();
+        } catch (error) {
+            respuesta.error(req, res, error.message, error.status || 401);
+        }
+        
     }
-    return middleware
 }

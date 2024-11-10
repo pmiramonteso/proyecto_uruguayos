@@ -15,41 +15,44 @@ module.exports = function(dbInyectada){
     function uno(id) {
         return db.uno(TABLA, id);
     }
-    
+    async function verificarEmailExistente(email) {
+        const resultado = await db.consultar(TABLA, { email: email });
+      
+        if (resultado.length > 0) {
+            throw new Error('El correo ya está registrado');
+        }
+        return true;
+    }
     async function agregar(body) {
+
+        await verificarEmailExistente(body.email);
+        
         const usuario = {
-            id: body.id,
             nombre: body.nombre,
             apellidos: body.apellidos,
             email: body.email,
-            rol: body.rol
         }
         const respuesta = await db.agregar(TABLA, usuario);
-        let insertId = 0;
+        let insertId = respuesta.insertId || body.id;
 
-        if(body.id == 0) {
-            insertId = respuesta.insertId;
-        } else {
-            insertId = body.id;
-        }
-        let respuesta2 = '';
-        if(body.usuario || body.password) {
-           respuesta2 = await auth.agregar({
+        if (insertId && (body.email || body.password)) {
+            await auth.agregar({
                 id: insertId,
-                usuario: body.usuario,
-                password: body.password
-            })
+                email: body.email,
+                password: body.password,
+            });
         }
-        return respuesta2;
+        return respuesta;
     }
     
     function eliminar(body) {
         return db.eliminar(TABLA, body);
     }
+
     return {
     todos,
     uno,
     agregar,
     eliminar
     }
-}
+};

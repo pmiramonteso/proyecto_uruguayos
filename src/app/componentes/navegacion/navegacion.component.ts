@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navegacion',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './navegacion.component.html',
   styleUrl: './navegacion.component.scss'
 })
-export class NavegacionComponent {
+export class NavegacionComponent implements OnInit {
+  constructor() {}
 
+  ngOnInit(): void {
+    console.log('NavegacionComponent cargado');
+  }
 }

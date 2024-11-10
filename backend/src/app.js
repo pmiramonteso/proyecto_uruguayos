@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const config = require('./config');
+const cors = require('cors');
+
 
 const usuarios = require('./modulos/usuarios/rutas');
 const eventos = require('./modulos/eventos/rutas');
@@ -8,6 +10,14 @@ const auth = require('./modulos/auth/rutas');
 const error = require('./red/errors');
 
 const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:4200',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+}));
+
 // Middleware
 app.use(morgan('dev'));
 app.use(express.json());
