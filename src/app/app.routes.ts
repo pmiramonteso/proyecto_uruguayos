@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { authGuard } from './auth/admin.guard';
+import { adminGuard } from './auth/admin.guard';
 
 import { PanelAdministracionComponent } from './componentes/admin/panel-administracion/panel-administracion.component';
 import { LoginComponent } from './componentes/usuario/login/login.component';
@@ -14,7 +14,7 @@ import { MapaComponent } from './componentes/mapa/mapa.component';
 
 
 export const routes: Routes = [
-    { path: 'admin', component: PanelAdministracionComponent, canActivate: [authGuard], data: { roles: ['admin']}},
+    { path: 'admin', component: PanelAdministracionComponent, canActivate: [adminGuard], data: { roles: ['admin']}},
     { path: 'login', component: LoginComponent},
     { path: 'registro', component: RegistroComponent},
     { path: 'bienvenida', component: BienvenidaComponent},
